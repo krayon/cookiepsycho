@@ -1,0 +1,37 @@
+{{{
+  @@@@@@@  @@@@@@   @@@@@@  @@@  @@@ @@@ @@@@@@@@      @@@@@@@   @@@@@@ @@@ @@@  @@@@@@@ @@@  @@@  @@@@@@ 
+ !@@      @@!  @@@ @@!  @@@ @@!  !@@ @@! @@!           @@!  @@@ !@@     @@! !@@ !@@      @@!  @@@ @@!  @@@
+ !@!      @!@  !@! @!@  !@! @!@@!@!  !!@ @!!!:!        @!@@!@!   !@@!!   !@!@!  !@!      @!@!@!@! @!@  !@!
+ :!!      !!:  !!! !!:  !!! !!: :!!  !!: !!:           !!:          !:!   !!:   :!!      !!:  !!! !!:  !!!
+  :: :: :  : :. :   : :. :   :   ::: :   : :: :::       :       ::.: :    .:     :: :: :  :   : :  : :. : 
+}}}
+= Cookie Psycho =
+
+== An aggressive cookie killer for Pale Moon ==
+
+== Introduction ==
+
+//Cookie Psycho// aims to remove cookies from your Pale Moon profile extremely aggressively.
+
+//Cookie Psycho// is based largely on the Firefox addon
+[[https://github.com/darktrojan/cookietime|Cookie Time]] by
+[[https://github.com/darktrojan|Geoff Lankow]].
+
+== Availability ==
+
+//Cookie Psycho// source is available on
+[[https://gitlab.com/krayon/cookiepsycho|GitLab]] and
+[[https://github.com/krayon/cookiepsycho|GitHub]] with the primary (public)
+repository being [[https://gitlab.com/krayon/cookiepsycho|GitLab]].
+
+//Cookie Psycho// binary and archive should be signed with my GPG key (
+[[http://pgp.mit.edu/pks/lookup?op=get&search=0x231A94F481ECF212|231A 94F4 81EC F212]]
+).
+
+== Bug Tracker ==
+
+Bugs are tracked on 
+[[https://gitlab.com/krayon/cookiepsycho/issues|GitLab]] or
+[[https://github.com/krayon/cookiepsycho/issues|GitHub]].
+
+<<< vim:set ts=4 sw=4 tw=80 et cindent ai si syn=creole: >>>
