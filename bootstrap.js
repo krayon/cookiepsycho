@@ -1,10 +1,10 @@
-const ADDON_ID = "cookietime@darktrojan.net";
-const ADDON_PREF_PAGE = "addons://detail/cookietime@darktrojan.net/preferences";
+const ADDON_ID = "cookiepsycho@qdnx.org";
+const ADDON_PREF_PAGE = "addons://detail/cookiepsycho@qdnx.org/preferences";
 
 const BROWSER_WINDOW_TYPE = "navigator:browser";
 const BROWSER_WINDOW_URL = "chrome://browser/content/browser.xul";
 
-const PREF_BRANCH = "extensions.cookietime.";
+const PREF_BRANCH = "extensions.cookiepsycho.";
 const PREF_DELETE_EXPIRED_COUNT = "deleteExpired.count";
 const PREF_DELETE_EXPIRED_ENABLED = "deleteExpired.enabled";
 const PREF_DELETE_UNUSED_COUNT = "deleteUnused.count";
@@ -28,7 +28,7 @@ Components.utils.import("resource://gre/modules/Task.jsm");
 Components.utils.import("resource://gre/modules/PluralForm.jsm");
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 
-XPCOMUtils.defineLazyGetter(this, "strings", function() Services.strings.createBundle("chrome://cookietime/locale/cookietime.properties"));
+XPCOMUtils.defineLazyGetter(this, "strings", function() Services.strings.createBundle("chrome://cookiepsycho/locale/cookiepsycho.properties"));
 XPCOMUtils.defineLazyGetter(this, "getPlural", function() PluralForm.makeGetter(strings.GetStringFromName("pluralForm"))[0]);
 
 let optionsObserver = {
@@ -41,7 +41,7 @@ let optionsObserver = {
 
 			this.updateAffectedCounts(aDocument);
 
-			aDocument.getElementById("cookietime.runnow").addEventListener("command", () => {
+			aDocument.getElementById("cookiepsycho.runnow").addEventListener("command", () => {
 				autoRunQueries().then(count => {
 					let deleted = count.deleteExpired + count.deleteUnused;
 					let modified = count.expire;
@@ -54,13 +54,13 @@ let optionsObserver = {
 
 	updateAffectedCounts: function(aDocument) {
 		countQueries().then(result => {
-			aDocument.getElementById("cookietime.deleteExpired.enabled").setAttribute("desc", formatPlural(result.deleteExpired));
-			let deleteUnusedItem = aDocument.getElementById("cookietime.deleteUnused.days").querySelector("menuitem");
+			aDocument.getElementById("cookiepsycho.deleteExpired.enabled").setAttribute("desc", formatPlural(result.deleteExpired));
+			let deleteUnusedItem = aDocument.getElementById("cookiepsycho.deleteUnused.days").querySelector("menuitem");
 			for (let day in result.deleteUnused) {
 				deleteUnusedItem.setAttribute("description", formatPlural(result.deleteUnused[day]));
 				deleteUnusedItem = deleteUnusedItem.nextElementSibling;
 			}
-			let expireItem = aDocument.getElementById("cookietime.expire.days").querySelector("menuitem");
+			let expireItem = aDocument.getElementById("cookiepsycho.expire.days").querySelector("menuitem");
 			for (let day in result.expire) {
 				expireItem.setAttribute("description", formatPlural(result.expire[day]));
 				expireItem = expireItem.nextElementSibling;
@@ -72,7 +72,7 @@ let optionsObserver = {
 let idleObserver = {
 	observe: function(aSubject, aTopic, aData) {
 		switch(aTopic) {
-		case "cookietime-idle":
+		case "cookiepsycho-idle":
 		case "idle-daily":
 			if (Services.prefs.getBoolPref(PREF_BRANCH + PREF_IDLE_ENABLED)) {
 				autoRunQueries().then(count => {
@@ -81,7 +81,7 @@ let idleObserver = {
 					Services.prefs.setIntPref(PREF_BRANCH + PREF_IDLE_LASTRAN, Math.floor(Date.now() / MS_IN_SECOND));
 					Services.console.logStringMessage(aTopic + ": " + strings.formatStringFromName("message", [formatPlural(deleted), formatPlural(modified)], 2));
 				});
-			} else if (aTopic == "cookietime-idle") {
+			} else if (aTopic == "cookiepsycho-idle") {
 				Services.console.logStringMessage(aTopic + ": " + strings.GetStringFromName("idle-disabled"));
 			}
 			break;
@@ -124,7 +124,7 @@ let windowHandler = {
 
 		let document = aWindow.document;
 		let menuitem = document.createElement("menuitem");
-		menuitem.id = "tools-cookietime";
+		menuitem.id = "tools-cookiepsycho";
 		menuitem.className = "menuitem-iconic";
 		menuitem.setAttribute("label", strings.GetStringFromName("options.label"));
 		menuitem.addEventListener("command", function() {
@@ -140,7 +140,7 @@ let windowHandler = {
 		}
 
 		let document = aWindow.document;
-		document.getElementById("tools-cookietime").remove();
+		document.getElementById("tools-cookiepsycho").remove();
 	},
 	showConfigMessage: function(aIcon) {
 		let recentWindow = Services.wm.getMostRecentWindow(BROWSER_WINDOW_TYPE);
@@ -149,7 +149,7 @@ let windowHandler = {
 		}
 
 		let label = strings.GetStringFromName("notification.label");
-		let value = "notify-cookietime";
+		let value = "notify-cookiepsycho";
 		let buttons = [{
 			label: strings.GetStringFromName("notification-button.label"),
 			accessKey: strings.GetStringFromName("notification-button.accesskey"),
@@ -183,7 +183,7 @@ function startup(aParams, aReason) {
 
 	Services.obs.addObserver(optionsObserver, "addon-options-displayed", false);
 	Services.obs.addObserver(idleObserver, "idle-daily", false);
-	Services.obs.addObserver(idleObserver, "cookietime-idle", false);
+	Services.obs.addObserver(idleObserver, "cookiepsycho-idle", false);
 
 	windowHandler.load();
 
@@ -201,7 +201,7 @@ function shutdown(aParams, aReason) {
 
 	Services.obs.removeObserver(optionsObserver, "addon-options-displayed");
 	Services.obs.removeObserver(idleObserver, "idle-daily", false);
-	Services.obs.removeObserver(idleObserver, "cookietime-idle", false);
+	Services.obs.removeObserver(idleObserver, "cookiepsycho-idle", false);
 }
 
 function autoRunQueries() {

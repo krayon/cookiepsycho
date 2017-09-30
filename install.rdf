@@ -2,13 +2,14 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-		<em:id>cookietime@darktrojan.net</em:id>
+		<em:id>cookiepsycho@qdnx.org</em:id>
 		<em:version>4</em:version>
 		<em:type>2</em:type>
 		<em:bootstrap>true</em:bootstrap>
-		<em:name>Cookie Time</em:name>
-		<em:description>Call time on cookies you don't want or need. Cookie Time removes expired and unused cookies, and sets all other cookies to expire in a sensible timeframe.</em:description>
-		<em:creator>Geoff Lankow</em:creator>
+		<em:name>Cookie Psycho</em:name>
+		<em:description>Agressively removes cookies you don't want or need. Cookie Psycho removes expired and unused cookies, and sets all other cookies to expire in a sensible timeframe.</em:description>
+		<em:creator>Quadronyx</em:creator>
+		<em:contributor>Geoff Lankow</em:contributor>
 
 		<em:targetApplication>
 			<Description>

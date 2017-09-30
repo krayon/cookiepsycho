@@ -1,0 +1,21 @@
+<!ENTITY cookiepsycho.deleteExpired.enabled-title "Delete Expired Cookies">
+<!ENTITY cookiepsycho.deleteUnused.days-title "Delete Cookies Unused For">
+<!ENTITY cookiepsycho.deleteUnused.days-nodelete "Don't Delete">
+<!ENTITY cookiepsycho.expire.days-title "All Cookies Expire Within">
+<!ENTITY cookiepsycho.expire.days-nomodify "Don't Modify">
+<!ENTITY cookiepsycho.runnow.label "Run Now">
+<!ENTITY cookiepsycho.idle.enabled-title "Run Automatically">
+<!ENTITY cookiepsycho.idle.enabled-desc "Runs about once a day when idle">
+
+<!ENTITY cookiepsycho.interval.7 "1 week">
+<!ENTITY cookiepsycho.interval.14 "2 weeks">
+<!ENTITY cookiepsycho.interval.30 "1 month">
+<!ENTITY cookiepsycho.interval.60 "2 months">
+<!ENTITY cookiepsycho.interval.91 "3 months">
+<!ENTITY cookiepsycho.interval.182 "6 months">
+<!ENTITY cookiepsycho.interval.273 "9 months">
+<!ENTITY cookiepsycho.interval.365 "12 months">
+<!ENTITY cookiepsycho.interval.547 "18 months">
+<!ENTITY cookiepsycho.interval.730 "2 years">
+<!ENTITY cookiepsycho.interval.1095 "3 years">
+<!ENTITY cookiepsycho.interval.1825 "5 years">

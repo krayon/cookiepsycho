@@ -1,44 +1,44 @@
 <?xml version="1.0" ?>
-<!DOCTYPE settings SYSTEM "chrome://cookietime/locale/cookietime.dtd">
+<!DOCTYPE settings SYSTEM "chrome://cookiepsycho/locale/cookiepsycho.dtd">
 <settings xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	<setting id="cookietime.deleteExpired.enabled" pref="extensions.cookietime.deleteExpired.enabled" title="&cookietime.deleteExpired.enabled-title;" type="bool" />
-	<setting id="cookietime.deleteUnused.days" pref="extensions.cookietime.deleteUnused.days" title="&cookietime.deleteUnused.days-title;" type="menulist">
+	<setting id="cookiepsycho.deleteExpired.enabled" pref="extensions.cookiepsycho.deleteExpired.enabled" title="&cookiepsycho.deleteExpired.enabled-title;" type="bool" />
+	<setting id="cookiepsycho.deleteUnused.days" pref="extensions.cookiepsycho.deleteUnused.days" title="&cookiepsycho.deleteUnused.days-title;" type="menulist">
 		<menulist sizetopopup="always">
 			<menupopup>
-				<menuitem value="7" label="&cookietime.interval.7;" />
-				<menuitem value="14" label="&cookietime.interval.14;" />
-				<menuitem value="30" label="&cookietime.interval.30;" />
-				<menuitem value="60" label="&cookietime.interval.60;" />
-				<menuitem value="91" label="&cookietime.interval.91;" />
-				<menuitem value="182" label="&cookietime.interval.182;" />
-				<menuitem value="273" label="&cookietime.interval.273;" />
-				<menuitem value="365" label="&cookietime.interval.365;" />
-				<menuitem value="547" label="&cookietime.interval.547;" />
-				<menuitem value="0" label="&cookietime.deleteUnused.days-nodelete;" />
+				<menuitem value="7" label="&cookiepsycho.interval.7;" />
+				<menuitem value="14" label="&cookiepsycho.interval.14;" />
+				<menuitem value="30" label="&cookiepsycho.interval.30;" />
+				<menuitem value="60" label="&cookiepsycho.interval.60;" />
+				<menuitem value="91" label="&cookiepsycho.interval.91;" />
+				<menuitem value="182" label="&cookiepsycho.interval.182;" />
+				<menuitem value="273" label="&cookiepsycho.interval.273;" />
+				<menuitem value="365" label="&cookiepsycho.interval.365;" />
+				<menuitem value="547" label="&cookiepsycho.interval.547;" />
+				<menuitem value="0" label="&cookiepsycho.deleteUnused.days-nodelete;" />
 			</menupopup>
 		</menulist>
 	</setting>
-	<setting id="cookietime.expire.days" pref="extensions.cookietime.expire.days" title="&cookietime.expire.days-title;" type="menulist">
+	<setting id="cookiepsycho.expire.days" pref="extensions.cookiepsycho.expire.days" title="&cookiepsycho.expire.days-title;" type="menulist">
 		<menulist sizetopopup="always">
 			<menupopup>
-				<menuitem value="7" label="&cookietime.interval.7;" />
-				<menuitem value="14" label="&cookietime.interval.14;" />
-				<menuitem value="30" label="&cookietime.interval.30;" />
-				<menuitem value="60" label="&cookietime.interval.60;" />
-				<menuitem value="91" label="&cookietime.interval.91;" />
-				<menuitem value="182" label="&cookietime.interval.182;" />
-				<menuitem value="273" label="&cookietime.interval.273;" />
-				<menuitem value="365" label="&cookietime.interval.365;" />
-				<menuitem value="547" label="&cookietime.interval.547;" />
-				<menuitem value="730" label="&cookietime.interval.730;" />
-				<menuitem value="1095" label="&cookietime.interval.1095;" />
-				<menuitem value="1825" label="&cookietime.interval.1825;" />
-				<menuitem value="0" label="&cookietime.expire.days-nomodify;" />
+				<menuitem value="7" label="&cookiepsycho.interval.7;" />
+				<menuitem value="14" label="&cookiepsycho.interval.14;" />
+				<menuitem value="30" label="&cookiepsycho.interval.30;" />
+				<menuitem value="60" label="&cookiepsycho.interval.60;" />
+				<menuitem value="91" label="&cookiepsycho.interval.91;" />
+				<menuitem value="182" label="&cookiepsycho.interval.182;" />
+				<menuitem value="273" label="&cookiepsycho.interval.273;" />
+				<menuitem value="365" label="&cookiepsycho.interval.365;" />
+				<menuitem value="547" label="&cookiepsycho.interval.547;" />
+				<menuitem value="730" label="&cookiepsycho.interval.730;" />
+				<menuitem value="1095" label="&cookiepsycho.interval.1095;" />
+				<menuitem value="1825" label="&cookiepsycho.interval.1825;" />
+				<menuitem value="0" label="&cookiepsycho.expire.days-nomodify;" />
 			</menupopup>
 		</menulist>
 	</setting>
-	<setting desc="&cookietime.idle.enabled-desc;" pref="extensions.cookietime.idle.enabled" title="&cookietime.idle.enabled-title;" type="bool" />
+	<setting desc="&cookiepsycho.idle.enabled-desc;" pref="extensions.cookiepsycho.idle.enabled" title="&cookiepsycho.idle.enabled-title;" type="bool" />
 	<setting type="control">
-		<button id="cookietime.runnow" label="&cookietime.runnow.label;" />
+		<button id="cookiepsycho.runnow" label="&cookiepsycho.runnow.label;" />
 	</setting>
 </settings>
