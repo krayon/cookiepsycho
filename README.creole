@@ -5,6 +5,7 @@
  :!!      !!:  !!! !!:  !!! !!: :!!  !!: !!:           !!:          !:!   !!:   :!!      !!:  !!! !!:  !!!
   :: :: :  : :. :   : :. :   :   ::: :   : :: :::       :       ::.: :    .:     :: :: :  :   : :  : :. : 
 }}}
+{{icon64.png|Cookie Psycho icon}}
 = Cookie Psycho =
 
 == An aggressive cookie killer for Pale Moon ==
