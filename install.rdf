@@ -7,9 +7,17 @@
 		<em:type>2</em:type>
 		<em:bootstrap>true</em:bootstrap>
 		<em:name>Cookie Psycho</em:name>
-		<em:description>Agressively removes cookies you don't want or need. Cookie Psycho removes expired and unused cookies, and sets all other cookies to expire in a sensible timeframe.</em:description>
+		<em:description>Aggressively removes cookies you don't want or need. Cookie Psycho removes expired and unused cookies, and sets all other cookies to expire in a sensible timeframe.</em:description>
 		<em:creator>Quadronyx</em:creator>
 		<em:contributor>Geoff Lankow</em:contributor>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+				<em:minVersion>27.1.0b1</em:minVersion>
+				<em:maxVersion>27.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
 
 		<em:targetApplication>
 			<Description>
@@ -21,3 +29,5 @@
 	</Description>
 
 </RDF>
+
+<!-- vim: set fdm=marker sw=4 ts=4 et: -->
